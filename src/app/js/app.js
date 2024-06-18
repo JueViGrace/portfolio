@@ -54,7 +54,7 @@ class Contact {
       contactList += `<li class="contact-chip">
                 <div class="chip-container">
                     <div class="chip-content">
-                        <img class="chip-icon" src=${value.icon} alt="${value.name}.png">
+                        <img class="icon" src=${value.icon} alt="${value.name}.png">
                     </div>
                     <div class="chip-content">
                         <p class="chip-text">${value.value}</p>

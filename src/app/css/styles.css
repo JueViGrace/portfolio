@@ -3,32 +3,46 @@
   padding: 0px;
 }
 
-body{
-    background-color: rgb(194, 208, 245);
+body {
+  background-color: rgb(49, 51, 59);
 }
 
 .container {
-  margin: 10px auto;
-  padding: 4px;
-  background: transparent;
+  max-width: 100%;
+  max-height: fit-content;
+  margin-top: 50px;
 }
 
 .contact-container {
-  padding: 6px;
+  background: rgb(61, 62, 66);
 }
 
 .contact-header {
-  padding: auto 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  margin-top: -25px;
+  position: relative;
 }
 
 .contact-title {
-  margin: auto 6px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: auto;
+  display: inline-block;
+  z-index: 3;
+  padding: 0 1.3rem 0 1.3rem;
+  color: white;
+  position: relative;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: lighter;
+  font-size: xx-large;
+}
+
+.contact-header::after {
+  content: "";
+  width: 100%;
+  border-bottom: solid 1px #fff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 1;
 }
 
 .contact-body {
@@ -39,34 +53,36 @@ body{
 }
 
 .contact-chips {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+  padding: 1rem;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-chip {
-    margin: 0.8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin: 0.3rem;
+  display: flex;
 }
 
 .chip-container {
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgb(73, 73, 73);
-    border-radius: 5px;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(73, 73, 73);
+  border-radius: 5px;
 }
 
 .chip-content {
-    display: flex;
-    padding: 4px;
+  display: flex;
+  padding: 4px;
 }
 
-.chip-icon {
-    width: 1.3rem;
-    height: auto;
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(259deg) brightness(103%) contrast(103%);
+.icon {
+  width: 1.3rem;
+  height: auto;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(259deg)
+    brightness(103%) contrast(103%);
 }
