@@ -4,97 +4,20 @@
 }
 
 body {
+  
   background-color: rgb(49, 51, 59);
 }
 
 .container {
-  max-width: 100%;
-  max-height: fit-content;
-  margin-top: 30px;
-}
-
-.contact-container {
   width: 100%;
-  background: rgb(61, 62, 66);
-  display: flex;
-  flex-direction: column;
+  max-height: fit-content;
 }
 
-.contact-header {
-  margin-top: -20px;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center;
+.footer {
+  margin-top: 24px;
 }
 
-.contact-header::after,
-.contact-header::before {
-  content: "";
-  flex: 1 1 auto;
-  border-bottom: solid 3px #00BFFF;
-}
-
-.contact-title {
-  padding: 0 1.3rem 0 1.3rem;
-  flex: 0 1 auto;
-  color: #fff;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: lighter;
-  font-size: xx-large;
-}
-
-.contact-body {
-  padding: 4px;
-  margin: 4px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.contact-chips {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contact-chip {
-  padding: 4px;
-  margin: 2px;
-}
-
-.chip-container {
-  padding: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgb(73, 73, 73);
-  border-radius: 5px;
-}
-
-.chip-content {
-  padding: 4px;
-  margin: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.chip-text {
-  text-align: center;
-  font-size: large;
-  font-weight: lighter;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #00BFFF;
-}
-
-.chip-link {
-  text-decoration: none;
-  text-decoration-line: none;
-}
-
-.icon {
+.white-icon {
   width: 1.4rem;
   height: auto;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(259deg)

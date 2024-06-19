@@ -5,30 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JVG Portfolio</title>
     <link rel="stylesheet" href="/src/app/css/styles.css" />
+    <link rel="stylesheet" href="/src/app/css/contact.css" />
+    <link rel="stylesheet" href="/src/app/css/projects.css" />
+    <link rel="stylesheet" href="/src/app/css/skils.css" />
+    <link rel="stylesheet" href="/src/app/css/experience.css" />
   </head>
   <body onload="initJs()">
     <section id="navBar"></section>
 
     <section id="about"></section>
 
-    <section id="skills"></section>
-
-    <section class="container" id="projects">
-      <div>
-        <h1>Projects</h1>
+    <section class="container" id="skills">
+      <div class="skills-container">
+        <div class="skilss-header">
+          <h1 class="skilss-title">Skills</h1>
+        </div>
       </div>
     </section>
 
-    <footer class="container" id="contact">
+    <section class="container" id="experience">
+      <div class="experience-container">
+        <div class="experience-header">
+          <h1>Experience</h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="projects">
+      <div class="projects-container">
+        <div class="projects-header">
+          <h1 class="projects-title">Projects</h1>
+        </div>
+        <div class="projects-body">
+            <div id="projects-list-container" class="projects-list-container">
+                <ul id="projects-list">
+
+                </ul>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container footer" id="contact">
       <div class="contact-container">
         <div class="contact-header">
           <h1 class="contact-title">Contact me</h1>
         </div>
         <div class="contact-body">
-          <div id="contact-no-link" class="contact-chips">
-          </div>
-          <div id="contact-with-link" class="contact-chips">
-          </div>
+          <div id="contact-no-link" class="contact-chips"></div>
+          <div id="contact-with-link" class="contact-chips"></div>
         </div>
       </div>
     </footer>
