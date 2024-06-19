@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JVG Portfolio</title>
-    <link rel="stylesheet" href="/src/app/css/styles.css">
-</head>
-<body onload="initJs()">
+    <link rel="stylesheet" href="/src/app/css/styles.css" />
+  </head>
+  <body onload="initJs()">
     <section id="navBar"></section>
 
     <section id="about"></section>
 
     <section id="skills"></section>
 
-    <section id="projects"></section>
-
-    <section class="container" id="contact" >
-        <footer>
-            <div class="contact-container">
-                <div class="contact-header">
-                    <h1 class="contact-title">Contact me</h1>
-                </div>
-                <div class="contact-body">
-                    <ul id="contact-chips" class="contact-chips"></ul>
-                </div>
-                <div class="contact-footer">
-                    <ul id="social-icons"></ul>
-                </div>
-            </div>
-        </footer>
+    <section class="container" id="projects">
+      <div>
+        <h1>Projects</h1>
+      </div>
     </section>
 
+    <footer class="container" id="contact">
+      <div class="contact-container">
+        <div class="contact-header">
+          <h1 class="contact-title">Contact me</h1>
+        </div>
+        <div class="contact-body">
+          <div id="contact-no-link" class="contact-chips">
+          </div>
+          <div id="contact-with-link" class="contact-chips">
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script src="/src/app/js/app.js"></script>
-</body>
-<script></script>
+  </body>
+  <script></script>
 </html>

@@ -29,19 +29,19 @@ class Contact {
   socialIcons = [
     new SocialLinks(
       "whatsapp",
-      "",
+      "Whatsapp",
       "https://wa.me/584246945447",
       "/src/public/whatsapp.png"
     ),
     new SocialLinks(
       "github",
-      "",
+      "Github",
       "https://github.com/JueViGrace",
       "/src/public/github.png"
     ),
     new SocialLinks(
-      "github",
-      "",
+      "linkedin",
+      "Linked In",
       "https://www.linkedin.com/in/daniel-zabala-147aa5136/",
       "/src/public/linkedin.png"
     ),
@@ -51,19 +51,24 @@ class Contact {
     let contactList = "";
 
     this.contactChips.forEach((value) => {
-      contactList += `<li class="contact-chip">
-                <div class="chip-container">
-                    <div class="chip-content">
-                        <img class="icon" src=${value.icon} alt="${value.name}.png">
-                    </div>
-                    <div class="chip-content">
-                        <p class="chip-text">${value.value}</p>
-                    </div>
-                </div>
-            </li>`;
+      contactList += `
+      <div class="contact-chip">
+        <div class="chip-container">
+          <div class="chip-content">
+              <img
+                class="icon"
+                src=${value.icon}
+                alt="${value.name}.png"
+                />
+            </div>
+            <div class="chip-content">
+              <p class="chip-text">${value.value}</p>
+            </div>
+          </div>
+        </div>`;
     });
 
-    document.getElementById("contact-chips").innerHTML = contactList;
+    document.getElementById("contact-no-link").innerHTML = contactList;
   }
 
   getSocialIcons() {
@@ -71,21 +76,25 @@ class Contact {
 
     this.socialIcons.forEach((value) => {
       iconList += `
-            <li class="contact-icon">
-                <div class="icon-container">
-                    <a href=${value.url}>
-                        <img 
-                            class="icon"
-                            src=${value.icon} 
-                            alt="${value.name}.png"
-                        />
-                    </a>
-                </div>
-            </li>
-        `;
+      <div class="contact-chip">
+        <a class="chip-link" href=${value.url}>
+          <div class="chip-container">
+            <div class="chip-content">
+              <img
+                class="icon"
+                src=${value.icon}
+                alt="${value.name}.png"
+                />
+            </div>
+            <div class="chip-content">
+              <p class="chip-text">${value.value}</p>
+            </div>
+          </div>
+        </a>
+      </div>`;
     });
 
-    document.getElementById("social-icons").innerHTML = iconList;
+    document.getElementById("contact-with-link").innerHTML = iconList;
   }
 }
 
