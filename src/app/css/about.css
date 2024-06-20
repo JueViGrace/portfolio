@@ -1,0 +1,33 @@
+.about-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: rgb(61, 62, 66);
+}
+
+.about-header {
+}
+
+.about-header-title {
+}
+
+.about-body {
+}
+
+.about-title-container {
+}
+
+.about-name-container {
+}
+
+.about-name {
+}
+
+.about-title {
+}
+
+.about-description-container {
+}
+
+.about-description {
+}

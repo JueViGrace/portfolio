@@ -23,7 +23,7 @@
 .contact-title {
   padding: 0 1.3rem 0 1.3rem;
   flex: 0 1 auto;
-  color: #FBFBF9;
+  color: #fbfbf9;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: lighter;
   font-size: xx-large;
@@ -63,7 +63,7 @@
     flex-direction: row;
     flex: 1;
   }
-  
+
   .contact-chips {
     flex: 1;
     flex-direction: column;
@@ -75,7 +75,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(73, 73, 73);
+  background: #494949;
   border-radius: 5px;
 }
 

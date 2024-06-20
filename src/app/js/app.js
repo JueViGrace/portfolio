@@ -194,22 +194,33 @@ function displayProjects() {
 }
 
 function displaySkills() {
-  const skills = [new Language("Kotlin", "/src/public/kt.png")];
+  const skills = [
+    new Language("Kotlin", "/src/public/kt.png"),
+    new Language("Java", "/src/public/java.png"),
+    new Language("Python", "/src/public/py.png"),
+    new Language("Typescript", "/src/public/ts.png"),
+    new Language("Javascript", "/src/public/js.png"),
+    new Language("Html & CSS", "/src/public/htmlcss.png"),
+    new Language("MySQL", "/src/public/mysql.png"),
+    new Language("MongoDB", "/src/public/mongo.png"),
+  ];
 
   let skillsItems = "";
 
   skills.forEach((value) => {
     skillsItems += `
-      <li class="skills-item">
+      <div class="skill-item">
         <div class="skill-container">
           <div class="skill-content">
-            <img class="icon" src=${value.icon} alt=${value.name}.png/>
+            <div class="skill-icon-container">
+              <img class="skill-icon" src=${value.icon} alt=${value.name}.png/>
+            </div>
           </div>
           <div class="skill-content">
             <h3 class="skill-name">${value.name}</h3>
           </div>
         </div>
-      </li>
+      </div>
     `;
   });
 
@@ -220,11 +231,11 @@ class App {
   initApp() {
     this.loadPorjects();
     this.loadContactSection();
-    this.loadSkills()
+    this.loadSkills();
   }
 
   loadSkills() {
-    displaySkills()
+    displaySkills();
   }
 
   loadPorjects() {
