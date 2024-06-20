@@ -57,25 +57,79 @@
 }
 
 .project-content {
-    margin: 2px;
-    padding: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 2px;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-title {
   text-align: start;
   font-size: x-large;
   font-weight: normal;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #fbfbf9;
 }
 
 .project-icon {
-    width: 1.6rem;
-    height: auto;
+  width: 1.6rem;
+  height: auto;
+}
+
+.project-description {
+  text-align: justify;
+  font-size: larger;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 2.5rem;
+  padding-right: 5rem;
+  color: #fbfbf9;
+}
+
+.project-icon {
+  width: 2.5rem;
+  padding: 0.2rem;
+  margin: 0.2rem;
 }
 
 .project-languaje {
+  padding: 0.2rem;
+  margin: 0.2rem;
+  text-align: justify;
+  font-size: x-large;
+  font-weight: normal;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #00bfff;
+}
 
+@media (min-width: 0px) and (max-width: 500px) {
+  .projects-header {
+    margin: 1rem 0 0 1rem;
+  }
+
+  .project-description {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .projects-body {
+    margin: 0 0.3rem;
+    padding: 0.1rem;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  .projects-header {
+    margin: 1rem 0 0 1.5rem;
+  }
+
+  .project-description {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .projects-body {
+    margin: 0 0.3rem;
+    padding: 0.1rem;
+  }
 }

@@ -1,5 +1,3 @@
-"uses strict";
-
 class SocialLinks {
   constructor(name, value, url, icon) {
     this.name = name;
@@ -13,8 +11,14 @@ class Project {
   constructor(name, description, language, image) {
     this.name = name;
     this.description = description;
-    this.language = language;
-    this.image = image;
+    this.language = new Language(language, image);
+  }
+}
+
+class Language {
+  constructor(name, icon) {
+    this.name = name;
+    this.icon = icon;
   }
 }
 
@@ -80,10 +84,10 @@ function getSocialChips() {
     ),
   ];
 
-  let iconList = "";
+  let iconItems = "";
 
   socialIcons.forEach((value) => {
-    iconList += `
+    iconItems += `
       <div class="contact-chip">
         <a class="chip-link" href=${value.url}>
           <div class="chip-container">
@@ -102,11 +106,11 @@ function getSocialChips() {
       </div>`;
   });
 
-  document.getElementById("contact-with-link").innerHTML = iconList;
+  document.getElementById("contact-with-link").innerHTML = iconItems;
 }
 
 function displayProjects() {
-  const projects = [
+  const projectsList = [
     new Project(
       "Bakery App",
       "Bakery app is a mobile application designed to help customers send orders to Bakey and Deserts. It's written in Kotlin, implementing Jetpack Compose for android and MVVM architecture pattern.",
@@ -127,13 +131,13 @@ function displayProjects() {
     ),
     new Project(
       "E-commerce App",
-      "This app self made project I made to practice more about how native android apps are made using Jetpack Compose. It later helped me really much at how mobile apps are made with Kotlin and how to implement recommended design patterns.",
+      "This app self made project to understand more about how native android apps are made using Jetpack Compose. It later helped me really much at how mobile apps are made with Kotlin and how to implement recommended design patterns.",
       "Kotlin",
       "/src/public/kt.png"
     ),
     new Project(
       "Express-api-POO and Express-api",
-      "These self made projects were my second and more deep approach to REST APIs and backend development. These are the same project made by using two programming paradigms, as the names says one was made using OOP and the other one mostly only functions. They were made using Express.js and Typecript.",
+      "These self made projects were made to manage requests from other of my projects. These are the same project made by using two programming paradigms, as the names says one was made using OOP and the other one mostly only functions. They were made using Express.js and Typecript.",
       "Typescript",
       "/src/public/ts.png"
     ),
@@ -163,10 +167,10 @@ function displayProjects() {
     ),
   ];
 
-  let projectList = "";
+  let projectItems = "";
 
-  projects.forEach((value) => {
-    projectList += `
+  projectsList.forEach((value) => {
+    projectItems += `
       <li class="project-item">
         <div class="project-container">
           <div class="project-content">
@@ -178,21 +182,49 @@ function displayProjects() {
             </p>
           </div>
           <div class="project-content">
-            <img class="project-icon" src=${value.image} alt=${value.name}.png/>
-            <p class="project-languaje">${value.language}</p>
+            <img class="project-icon" src=${value.language.icon} alt=${value.name}.png/>
+            <p class="project-languaje">${value.language.name}</p>
           </div>
         </div>
       </li>
     `;
   });
 
-  document.getElementById("projects-list").innerHTML = projectList;
+  document.getElementById("projects-list").innerHTML = projectItems;
+}
+
+function displaySkills() {
+  const skills = [new Language("Kotlin", "/src/public/kt.png")];
+
+  let skillsItems = "";
+
+  skills.forEach((value) => {
+    skillsItems += `
+      <li class="skills-item">
+        <div class="skill-container">
+          <div class="skill-content">
+            <img class="icon" src=${value.icon} alt=${value.name}.png/>
+          </div>
+          <div class="skill-content">
+            <h3 class="skill-name">${value.name}</h3>
+          </div>
+        </div>
+      </li>
+    `;
+  });
+
+  document.getElementById("skills-list").innerHTML = skillsItems;
 }
 
 class App {
   initApp() {
     this.loadPorjects();
     this.loadContactSection();
+    this.loadSkills()
+  }
+
+  loadSkills() {
+    displaySkills()
   }
 
   loadPorjects() {

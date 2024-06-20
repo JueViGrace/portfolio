@@ -1,10 +1,10 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
-  
   background-color: rgb(49, 51, 59);
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 .white-icon {
-  width: 1.4rem;
+  width: 1.6rem;
   height: auto;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(259deg)
     brightness(103%) contrast(103%);

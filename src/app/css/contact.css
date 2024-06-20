@@ -23,7 +23,7 @@
 .contact-title {
   padding: 0 1.3rem 0 1.3rem;
   flex: 0 1 auto;
-  color: #fff;
+  color: #FBFBF9;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: lighter;
   font-size: xx-large;
@@ -47,6 +47,27 @@
 .contact-chip {
   padding: 4px;
   margin: 2px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+  .contact-chips {
+    flex: 1;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  .contact-body {
+    flex-direction: row;
+    flex: 1;
+  }
+  
+  .contact-chips {
+    flex: 1;
+    flex-direction: column;
+  }
 }
 
 .chip-container {
@@ -59,8 +80,8 @@
 }
 
 .chip-content {
-  padding: 4px;
-  margin: 4px;
+  padding: 3px;
+  margin: 3px;
   display: flex;
   justify-content: center;
   align-items: center;
