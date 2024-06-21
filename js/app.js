@@ -28,14 +28,14 @@ function getContactChips() {
       "email",
       "danielzabalanava@gmail.com",
       "",
-      "/src/public/email.png"
+      "./public/email.png"
     ),
-    new SocialLinks("phone", "+58-4246945447", "", "/src/public/phone.png"),
+    new SocialLinks("phone", "+58-4246945447", "", "./public/phone.png"),
     new SocialLinks(
       "location",
       "Zulia, Venezuela",
       "",
-      "/src/public/location.png"
+      "./public/location.png"
     ),
   ];
 
@@ -68,19 +68,19 @@ function getSocialChips() {
       "whatsapp",
       "Whatsapp",
       "https://wa.me/584246945447",
-      "/src/public/whatsapp.png"
+      "./public/whatsapp.png"
     ),
     new SocialLinks(
       "github",
       "Github",
       "https://github.com/JueViGrace",
-      "/src/public/github.png"
+      "./public/github.png"
     ),
     new SocialLinks(
       "linkedin",
       "Linked In",
       "https://www.linkedin.com/in/daniel-zabala-147aa5136/",
-      "/src/public/linkedin.png"
+      "./public/linkedin.png"
     ),
   ];
 
@@ -115,55 +115,55 @@ function displayProjects() {
       "Bakery App",
       "Bakery app is a mobile application designed to help customers send orders to Bakey and Deserts. It's written in Kotlin, implementing Jetpack Compose for android and MVVM architecture pattern.",
       "Kotlin",
-      "/src/public/kt.png"
+      "./public/kt.png"
     ),
     new Project(
       "Bakery Backend",
       "This project a REST API designed to manage the corresponding web and mobile applicaitons of Bakey and Deserts. It was made using Nest.js and Typescript.",
       "Typescript",
-      "/src/public/ts.png"
+      "./public/ts.png"
     ),
     new Project(
       "Bakery user and bakery admin",
       "These projects are the web applications made for Bakery and Deserts. They were made using Angular to build the UI.",
       "Typescript",
-      "/src/public/ts.png"
+      "./public/ts.png"
     ),
     new Project(
       "E-commerce App",
       "This app self made project to understand more about how native android apps are made using Jetpack Compose. It later helped me really much at how mobile apps are made with Kotlin and how to implement recommended design patterns.",
       "Kotlin",
-      "/src/public/kt.png"
+      "./public/kt.png"
     ),
     new Project(
       "Express-api-POO and Express-api",
       "These self made projects were made to manage requests from other of my projects. These are the same project made by using two programming paradigms, as the names says one was made using OOP and the other one mostly only functions. They were made using Express.js and Typecript.",
       "Typescript",
-      "/src/public/ts.png"
+      "./public/ts.png"
     ),
     new Project(
       "AC-CLOSS",
       "This project is a mobile app made for the company Comercializadora la Occidental and Wokin Vzla at the moment. It's used by their managers to help them control their corresponding salesman and zones. This project was made using android native views and then compose views were used to start migrating the app to the newer way of making UIs in android.",
       "Kotlin",
-      "/src/public/kt.png"
+      "./public/kt.png"
     ),
     new Project(
       "CLOSS-api",
       "This project was made to upgrade the api services this company had a the time. It was made using Nest.js and Typescript.",
       "Typescript",
-      "/src/public/ts.png"
+      "./public/ts.png"
     ),
     new Project(
       "AC-CLOSS (Compose)",
       "This project is a mobile app made for the company Comercializadora la Occidental and Wokin Vzla at the moment. It fulfills the same needs as the AC-CLOSS application. This application is a rebuild of AC-CLOSS app but using Jetpack Compose as the framework for building the UI.",
       "Kotlin",
-      "/src/public/kt.png"
+      "./public/kt.png"
     ),
     new Project(
       "Dz Judo App",
       "This project is a mobile app made to help the customer manage his students and their payments. It is made in Kotlin and using Jetpack Compose to build the UI.",
       "Kotlin",
-      "/src/public/kt.png"
+      "./public/kt.png"
     ),
   ];
 
@@ -195,14 +195,14 @@ function displayProjects() {
 
 function displaySkills() {
   const skills = [
-    new Language("Kotlin", "/src/public/kt.png"),
-    new Language("Java", "/src/public/java.png"),
-    new Language("Python", "/src/public/py.png"),
-    new Language("Typescript", "/src/public/ts.png"),
-    new Language("Javascript", "/src/public/js.png"),
-    new Language("Html & CSS", "/src/public/htmlcss.png"),
-    new Language("MySQL", "/src/public/mysql.png"),
-    new Language("MongoDB", "/src/public/mongo.png"),
+    new Language("Kotlin", "./public/kt.png"),
+    new Language("Java", "./public/java.png"),
+    new Language("Python", "./public/py.png"),
+    new Language("Typescript", "./public/ts.png"),
+    new Language("Javascript", "./public/js.png"),
+    new Language("Html & CSS", "./public/htmlcss.png"),
+    new Language("MySQL", "./public/mysql.png"),
+    new Language("MongoDB", "./public/mongo.png"),
   ];
 
   let skillsItems = "";
