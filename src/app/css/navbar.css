@@ -1,4 +1,9 @@
 .nav-container {
+  margin: 0.2rem;
+  padding: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-icon {
@@ -8,19 +13,83 @@
 }
 
 .nav-body {
+  margin: 0.2rem;
+  padding: 0.2rem;
 }
 
 .nav-bar {
+  margin: 0.2rem;
+  padding: 0.2rem;
 }
 
 .nav-list-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0.5rem;
+  list-style-type: none;
 }
 
 .nav-list-content {
+  margin: 0.3rem;
+}
+
+.nav-button {
+  padding: 1rem;
+  border: solid 1px #fbfbf9;
+  border-radius: 10px;
+}
+.nav-button:hover {
+  padding: 1rem;
+  border: solid 1px #00bfff;
+  border-radius: 10px;
+  color: #00bfff;
 }
 
 .nav-link {
+  text-decoration: none;
 }
 
 .nav-title {
+  text-align: center;
+  font-size: larger;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fbfbf9;
+}
+
+@media (max-width: 800px) {
+    .nav-container {
+        flex-direction: row;
+    }
+
+    .nav-list-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .nav-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-bar {
+        display: flex;
+        flex-grow: 1;
+    }
+
+    .nav-list-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
 }

@@ -10,45 +10,58 @@
     <link rel="stylesheet" href="/src/app/css/skils.css" />
     <link rel="stylesheet" href="/src/app/css/experience.css" />
     <link rel="stylesheet" href="/src/app/css/about.css" />
+    <link rel="stylesheet" href="/src/app/css/navbar.css" />
   </head>
   <body onload="initJs()">
     <section class="container" id="navBar">
       <div class="nav-container">
         <div class="nav-icon">
-          <div class="nav-icon">O</div>
+          <div class="nav-icon"></div>
         </div>
         <div class="nav-body">
           <nav class="nav-bar">
             <ul class="nav-list-container">
               <li class="nav-list-content">
-                <a class="nav-link" href="#">
-                  <h3 class="nav-title">Home</h3>
-                </a>
+                <div class="nav-button">
+                  <a class="nav-link" href="#">
+                    <h3 class="nav-title">Home</h3>
+                  </a>
+                </div>
               </li>
               <li class="nav-list-content">
-                <a class="nav-link" href="#about">
-                  <h3 class="nav-title">About</h3>
-                </a>
+                <div class="nav-button">
+                  <a class="nav-link" href="#about">
+                    <h3 class="nav-title">About</h3>
+                  </a>
+                </div>
               </li>
               <li class="nav-list-content">
-                <a class="nav-link" href="#skills">
-                  <h3 class="nav-title">Skills</h3>
-                </a>
+                <div class="nav-button">
+                  <a class="nav-link" href="#skills">
+                    <h3 class="nav-title">Skills</h3>
+                  </a>
+                </div>
               </li>
               <li class="nav-list-content">
-                <a class="nav-link" href="#experience">
-                  <h3 class="nav-title">Experience</h3>
-                </a>
+                <div class="nav-button">
+                  <a class="nav-link" href="#experience">
+                    <h3 class="nav-title">Experience</h3>
+                  </a>
+                </div>
               </li>
               <li class="nav-list-content">
-                <a class="nav-link" href="#projects">
-                  <h3 class="nav-title">Projects</h3>
-                </a>
+                <div class="nav-button">
+                  <a class="nav-link" href="#projects">
+                    <h3 class="nav-title">Projects</h3>
+                  </a>
+                </div>
               </li>
               <li class="nav-list-content">
-                <a class="nav-link" href="#contact">
-                  <h3 class="nav-title">Contact</h3>
-                </a>
+                <div class="nav-button">
+                  <a class="nav-link" href="#contact">
+                    <h3 class="nav-title">Contact</h3>
+                  </a>
+                </div>
               </li>
             </ul>
           </nav>
@@ -62,9 +75,10 @@
           <h1 class="about-header-title">About me</h1>
         </div>
         <div class="about-body">
-          <div class="about-title-container">
+          <div class="about-presentation-container">
             <div class="about-name-container">
-              <h1 class="about-name">I'm Daniel Zabala</h1>
+              <p class="about-name-p">I'm</p>
+              <h1 class="about-name">Daniel Zabala</h1>
             </div>
             <div class="about-title-container">
               <h3 class="about-title">Computer engineer</h3>
@@ -72,9 +86,9 @@
           </div>
           <div class="about-description-container">
             <p class="about-description">
-              With the years of experience I've acquired great undestanding
-              about native android mobile apps and their architecture designs.
-              In addition to this, desinging and creating web API's for these
+              Over the past few years I've acquired great undestanding about
+              native android mobile apps and their architecture designs. In
+              addition to this, desinging and creating web API's for these
               applications and that could also be used by a web interface,
               wanting to focus more on the backend side.
             </p>
@@ -90,7 +104,7 @@
         </div>
         <div class="skills-body">
           <div class="skills-list-container">
-            <div id="skills-list"></di>
+            <div id="skills-list"></div>
           </div>
         </div>
       </div>
@@ -102,26 +116,28 @@
           <h1 class="experience-title">Experience</h1>
         </div>
         <div class="experience-body">
-          <div class="experience-timeline">
-            <div class="experience-timeline-2023">2024</div>
-            <div class="experience-timeline-2024">2023</div>
+          <div class="experience-content">
+            <div class="experience-year">2024</div>
+            <div class="experience-description-container">
+              <p class="experience-description">
+                Computer engineer at Comercializadora la Occidental. In charge
+                of developing, maintaining and testing the company mobile
+                applications that are used in the daily, and creating newer and
+                better backend and mobile applications to improve the ones
+                existing at the time.
+              </p>
+            </div>
           </div>
-          <div class="experience-description-container">
-            <p class="experience-description">
-              Internship as a Systems Programmer at Comercializadora la
-              Occidental. In charge of developing mobile applications to help
-              the managers handle more properly their assinged zones and
-              salesman.
-            </p>
-          </div>
-          <div class="experience-description-container">
-            <p class="experience-description">
-              Systems Programmer at Comercializadora la Occidental. In charge of
-              developing, maintaining and testing the company mobile
-              applications that are used in the daily, and creating newer and
-              better backend and mobile applications to improve the ones
-              existing at the time.
-            </p>
+          <div class="experience-content">
+            <div class="experience-year">2023</div>
+            <div class="experience-description-container">
+              <p class="experience-description">
+                Internship as a Systems Programmer at Comercializadora la
+                Occidental. In charge of developing mobile applications to help
+                the managers handle more properly their assinged zones and
+                salesman.
+              </p>
+            </div>
           </div>
         </div>
       </div>
